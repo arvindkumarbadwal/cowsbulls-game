@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+
+  <title>Hello, world!</title>
+</head>
+<body class="page">
+  <div class="container game-box">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="card">
+          <div class="card-header">
+            <div class="row">
+              <div class="col-sm-4">
+                <input type="text" id="submit-word" placeholder="Submit Your Word" class="form-control text-uppercase text-monospace" maxlength="5">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <table class="table table-bordered table-sm text-center">
+              <thead class="thead-light">
+                <tr>
+                  <th class="text-muted">#</th>
+                  <th class="text-muted w-50">Word</th>
+                  <th class="text-muted">Cows</th>
+                  <th class="text-muted">Bulls</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="word-row row-1">
+                  <td class="text-muted">1</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-2">
+                  <td class="text-muted">2</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-3">
+                  <td class="text-muted">3</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-4">
+                  <td class="text-muted">4</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-5">
+                  <td class="text-muted">5</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-6">
+                  <td class="text-muted">6</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-7">
+                  <td class="text-muted">7</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-8">
+                  <td class="text-muted">8</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-8">
+                  <td class="text-muted">8</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-10">
+                  <td class="text-muted">10</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-11">
+                  <td class="text-muted">11</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-12">
+                  <td class="text-muted">12</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-13">
+                  <td class="text-muted">13</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-14">
+                  <td class="text-muted">14</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+                <tr class="word-row row-15">
+                  <td class="text-muted">15</td>
+                  <td class="text-monospace letter"></td>
+                  <td class="text-monospace cows"></td>
+                  <td class="text-monospace bulls"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+            <div class="">
+              <span class="alphabet-box" data-alphabet="A">A</span>
+              <span class="alphabet-box" data-alphabet="B">B</span>
+              <span class="alphabet-box" data-alphabet="C">C</span>
+              <span class="alphabet-box" data-alphabet="D">D</span>
+              <span class="alphabet-box" data-alphabet="E">E</span>
+              <span class="alphabet-box" data-alphabet="F">F</span>
+              <span class="alphabet-box" data-alphabet="G">G</span>
+              <span class="alphabet-box" data-alphabet="H">H</span>
+              <span class="alphabet-box" data-alphabet="I">I</span>
+              <span class="alphabet-box" data-alphabet="J">J</span>
+              <span class="alphabet-box" data-alphabet="K">K</span>
+              <span class="alphabet-box" data-alphabet="L">L</span>
+              <span class="alphabet-box" data-alphabet="M">M</span>
+              <span class="alphabet-box" data-alphabet="N">N</span>
+              <span class="alphabet-box" data-alphabet="O">O</span>
+              <span class="alphabet-box" data-alphabet="P">P</span>
+              <span class="alphabet-box" data-alphabet="Q">Q</span>
+              <span class="alphabet-box" data-alphabet="R">R</span>
+              <span class="alphabet-box" data-alphabet="S">S</span>
+              <span class="alphabet-box" data-alphabet="T">T</span>
+              <span class="alphabet-box" data-alphabet="U">U</span>
+              <span class="alphabet-box" data-alphabet="V">V</span>
+              <span class="alphabet-box" data-alphabet="W">W</span>
+              <span class="alphabet-box" data-alphabet="X">X</span>
+              <span class="alphabet-box" data-alphabet="Y">Y</span>
+              <span class="alphabet-box" data-alphabet="Z">Z</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+            <div class="text-center"><label class="text-muted">You Guess Letter</label></div>
+            <div class="text-center text-muted">
+              <input type="text" size=1 maxlength=1 class="text-uppercase">
+              <input type="text" size=1 maxlength=1 class="text-uppercase">
+              <input type="text" size=1 maxlength=1 class="text-uppercase">
+              <input type="text" size=1 maxlength=1 class="text-uppercase">
+              <input type="text" size=1 maxlength=1 class="text-uppercase">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+            <table class="table text-muted">
+              <tr>
+                <td>Time Spend</td>
+                <td class="text-monospace timer">00:00</td>
+              </tr>
+              <tr>
+                <td>Game Status</td>
+                <td class="game-status"></td>
+              </tr>
+              <tr>
+                <td>Guess Word</td>
+                <td class="guess-word">XXXXX</td>
+              </tr>
+              <tr class="restart-game">
+                <td colspan="2" class="text-center">
+                  <button class="btn btn-dark" onClick="window.location.reload()">Restart Game</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script type="text/javascript">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+  <script src="words.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
