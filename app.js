@@ -48,7 +48,6 @@ $(document).ready(function() {
             startTimer();
             $('.game-status').text('Playing');
             $('.guess-word').text('XXXXX');
-            $('.restart-game').hide();
             $("#submit-word").focus();
             window.scrollTo(0,0);
         }
@@ -110,7 +109,6 @@ $("#submit-word").on('keyup', function (e) {
             isStatus = 'win';
             stopTimer();
             $('.game-status').text('Won');
-            $('.restart-game').show();
             $('.guess-word').text(word);
             $("#submit-word").blur();
 
@@ -128,7 +126,6 @@ $("#submit-word").on('keyup', function (e) {
                 isStatus = 'lose';
                 stopTimer();
                 $('.game-status').text('Lose');
-                $('.restart-game').show();
                 $('.guess-word').text(cowsbulls.guessWord);
                 $("#submit-word").blur();
                 window.scrollTo(0,document.body.scrollHeight);
