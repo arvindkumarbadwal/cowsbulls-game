@@ -11,6 +11,25 @@
   <link rel="stylesheet" href="app.css">
 
   <title>Cow & Bulls Games !</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.8.3/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.8.3/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/9.8.3/firebase-performance-compat.js"></script>
+  <!-- 
+    initialize the SDK after all desired features are loaded, set useEmulator to false
+    to avoid connecting the SDK to running emulators.
+  -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
 </head>
 <body class="page">
   <div class="container game-box">
@@ -83,8 +102,8 @@
                   <td class="text-monospace cows"></td>
                   <td class="text-monospace bulls"></td>
                 </tr>
-                <tr class="word-row row-8">
-                  <td class="text-muted">8</td>
+                <tr class="word-row row-9">
+                  <td class="text-muted">9</td>
                   <td class="text-monospace letter"></td>
                   <td class="text-monospace cows"></td>
                   <td class="text-monospace bulls"></td>
@@ -184,6 +203,44 @@
   </div>
 
   <!-- Optional JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadEl = document.querySelector('#load');
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      // firebase.analytics(); // call to activate
+      // firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth', 
+          'database', 
+          'firestore',
+          'functions',
+          'messaging', 
+          'storage', 
+          'analytics', 
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
